@@ -1,1 +1,13 @@
-<h1>{{title}}</h1>
+<div *ngIf="stations.length > 0">
+  <h1>Gas Stations</h1>
+  <ul>
+    <li *ngFor="let station of stations">
+      <h2>{{ station.name }}</h2>
+      <p>{{ station.address }}</p>
+      <p>{{ station.phoneNumber }}</p>
+    </li>
+  </ul>
+</div>
+<div *ngIf="stations.length === 0">
+  <p>No gas stations available.</p>
+</div>
