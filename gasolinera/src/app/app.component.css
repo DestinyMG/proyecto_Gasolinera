@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Letra blanca */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center; /* Centrado del texto */
+}
+
+/* Título principal */
+h1 {
+    color: #ffcc00; /* Color dorado para el título */
+    font-size: 4rem; /* Texto grande */
+    margin-bottom: 30px; /* Espacio debajo */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); /* Sombra sutil */
+    text-transform: uppercase; /* Todo en mayúsculas */
+}
+
+/* Estilo de lista */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Estilo para cada estación */
+li {
+    background-color: #333; /* Fondo gris oscuro */
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    color: #fff; /* Letra blanca */
+}
+
+/* Efecto hover para cada estación */
+li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Título de cada estación */
+h2 {
+    font-size: 2rem;
+    color: #ffcc00; /* Color dorado */
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Información de dirección y teléfono */
+p {
+    font-size: 1.2rem;
+    color: #eaeaea; /* Letra gris claro */
+    margin: 8px 0;
+}
+
+/* Estilo para la dirección */
+p.address {
+    font-style: italic;
+    color: #ffd700; /* Amarillo dorado */
+}
+
+/* Estilo para el número de teléfono */
+p.phoneNumber {
+    font-weight: bold;
+    color: #ff6f00; /* Naranja fuerte */
+}
+
+/* Loader animado */
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    margin-top: 20px;
+}
+
+/* Animación de giro para el loader */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Fondo de la página con animación */
+@keyframes bgAnimation {
+    0% { background-color: #000; }
+    50% { background-color: #333; }
+    100% { background-color: #000; }
+}
+
+body {
+    animation: bgAnimation 8s ease-in-out infinite;
+}
